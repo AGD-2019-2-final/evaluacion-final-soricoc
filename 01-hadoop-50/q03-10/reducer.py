@@ -1,4 +1,8 @@
+#!/usr/bin/env python
+
 import sys
-#
-# >>> Escriba el codigo del reducer a partir de este punto <<<
-#
+
+if __name__ == '__main__':   
+    for line in sys.stdin:
+        val = line.split('\t')[-1]
+        sys.stdout.write("{}".format(val))
